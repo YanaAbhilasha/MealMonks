@@ -478,11 +478,11 @@ body {
   .card__img {
     display: block;
     width: 100%;
-    max-height: 25rem;
+    max-height: 35rem;
     object-fit:cover;
   }
   .card__content {
-    padding: 3rem 3rem;
+    padding: 2rem 2rem;
   }
   .card__header {
     font-size: 3rem;
@@ -498,7 +498,7 @@ body {
     letter-spacing: 0.1rem;
     line-height: 1.7;
     color: #3d3d3d;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
   }
   
 
@@ -609,7 +609,7 @@ body {
 /*........................................project...................................................................*/
 #urban {
     padding: 50px 0px;
-    background: #f5f5f7;
+    background: linear-gradient(to bottom, #ffffff, #d8f3dc65);
 }
 
 .urban-heading::after {
@@ -690,16 +690,17 @@ body {
     /* Ensure arrows are above images */
 }
 
-.left-arrow {
+.left-arrow-green {
     left: 10px;
 }
 
-.right-arrow {
+.right-arrow-green {
     right: 10px;
 }
 
 #meal {
     text-align: center;
+    background: linear-gradient(to bottom, #d8f3dc65, #ffffff);
 }
 
 .meal-image {
@@ -709,7 +710,7 @@ body {
 
 .meal-image img {
     width: 500px;
-    height: 600px;
+    height: 500px;
     margin: 0 10px;
     opacity: 0;
     animation: slideIn 1s forwards;
@@ -746,7 +747,7 @@ body {
 
 #rural {
     padding: 50px 0px;
-    background: #f5f5f7;
+    background: linear-gradient(to bottom, #ffffff, #d8f3dc65);
 }
 
 .rural-heading::after {
@@ -787,53 +788,70 @@ body {
 
 #gulal {
     text-align: center;
-    background: #f5f5f7;
+    background: linear-gradient(to bottom,  #d8f3dc65, #ffffff);
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: column; /* Stack the items vertically */
 }
 
 #gulal h2 {
-    font-size: 4.2rem;
+    font-size: 4rem;
     color: #555;
 }
 
 .gulal-image {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    /* Align items to the start of the flex container */
+    justify-content: center; /* Center the images horizontally */
     max-width: 100%;
     width: 100%;
-    /* Ensure the container occupies the full width */
     padding-left: 5%;
-
 }
 
 .gulal-image img {
     flex: 0 0 calc(40% - 20px);
-    /* Each image takes up 33.33% of the container width with some margin */
-    max-width: 500px;
+    max-width: 550px;
     height: auto;
     margin: 10px;
-    /* Adjust margin as needed */
     padding: 2%;
 }
 
 .gulal-item {
     margin: 0 1rem 3rem 0;
-    /* Adjust the margin as needed */
+}
 
+.arrow {
+    font-size: 50px;
+    /* Adjust the font size to make the arrows bigger */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    /* Adjust arrow color */
+    z-index: 1;
+    /* Ensure arrows are above images */
+}
 
+.left-arrow-gulal {
+    left: 10px;
+}
+
+.right-arrow-gulal {
+    right: 10px;
 }
 
 
 #vermi {
     text-align: center;
-    background-image: linear-gradient(to right, #000000, #333333);
+    background: linear-gradient(to bottom, #ffffff, #d8f3dc65);
     padding-bottom: 2%;
 }
 
 #vermi h2 {
     font-size: 4.2rem;
-    color: white;
+    color:  #555; ;
 }
 
 .vermi-wrapper {
@@ -854,15 +872,41 @@ body {
 
 .vermi-image img {
     width: 500px;
-    height: 600px;
+    height: 400px;
     margin: 0 10px;
     opacity: 0;
+    object-fit: cover;
     animation: slideIn 1s forwards;
 }
+.vermi-image img:nth-child(1) {
+    animation-delay: 0.2s;
+    /* Delay the animation of the first image */
+}
 
+.vermi-image img:nth-child(2) {
+    animation-delay: 0.4s;
+    /* Delay the animation of the second image */
+}
+
+.vermi-image img:nth-child(3) {
+    animation-delay: 0.6s;
+    /* Delay the animation of the third image */
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 #poultry {
     text-align: center;
+    background: linear-gradient(to bottom,#d8f3dc65, #ffffff);
 }
 
 #poultry h2 {
@@ -883,12 +927,17 @@ body {
 }
 
 .poultry-image img {
-    width: 500px;
-    height: 600px;
+    width: 300px;
+    height: 370px; /* Ensure images maintain their aspect ratio */
+    /* max-height: 400px; Set a maximum height to prevent images from becoming too large */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire container */
     margin: 0 10px;
     opacity: 0;
     animation: slideIn 1s forwards;
 }
+
+
+
 
 .poultry-image img:nth-child(1) {
     animation-delay: 0.2s;
@@ -919,10 +968,16 @@ body {
 
 #covid {
     text-align: center;
+    background: linear-gradient(to bottom, #ffffff, #d8f3dc65);
+}
+
+#covid h2 {
+    font-size: 4.2rem;
+    color: #555;
 }
 
 #covid h3 {
-    font-size: 4.2rem;
+    font-size: 3.5rem;
     color: #555;
 }
 
@@ -938,13 +993,24 @@ body {
     text-align: center;
 }
 
-.cov-image img {
-    width: 550px;
-    height: 500px;
+.cov-item {
+    flex: 1;
     margin: 0 10px;
-    opacity: 0;
-    animation: slideIn 1s forwards;
+    padding: 2%;
+    box-sizing: border-box;
 }
+
+.cov-image img  {
+    
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+        object-fit: cover;
+        animation: slideIn 1s forwards;
+    
+}
+
+
 
 .cov-image img:nth-child(1) {
     animation-delay: 0.2s;
