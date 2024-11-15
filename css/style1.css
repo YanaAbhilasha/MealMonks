@@ -606,6 +606,478 @@ body {
     background: rgb(171, 246, 175);
 }
 
+.contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px 50px 0px;
+}
+
+.contact-item {
+    flex: 1 1 calc(50% - 1rem);
+    margin: 0 1rem 3rem 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: 600;
+    background-color: rgb(255, 243, 245); 
+}
+
+.contact-text, .contact-info {
+    font-size: 2.1rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.btn-contact {
+    color: #05570a;
+    background: rgb(239, 244, 240);
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-contact:hover {
+    background: rgb(171, 246, 175);
+}
+
+
+/*........................................project...................................................................*/
+
+/**   Project Styling **/
+#project {
+    padding: 5rem 0 10rem 0;
+    background: linear-gradient(to bottom, #ffffff, #d8f3dc65);
+}
+
+.project-text {
+    margin: auto 3.5rem;
+    font-size: 1.6rem;
+}
+.project-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #444;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 243, 245); 
+    text-decoration: underline;
+}
+.project-item{
+    height: 350px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(85, 85, 85, 0.61);
+    border-radius: 1.5rem;
+}
+.project-item1{
+    margin-bottom: 10rem;
+    border-radius: 2rem;
+}
+.project-item2{
+    margin-bottom: 10rem;
+    border-radius: 2rem;
+}
+.project-item1 .project-img, .project-item2 .project-content{
+    float: left;
+    width: 50%;
+}
+.project-item2 .project-img, .project-item1 .project-content{
+    float: right;
+    width: 50%;
+}
+.project-item .project-img{
+    height: 100%;
+    border-radius: 2rem;
+}
+.project-item1 .project-img img{
+    height: 100%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+}
+.project-item2 .project-img img{
+    height: 100%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+}
+.project-item .project-content{
+    padding: 3rem;
+}
+
+.project-item .project-img img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+.project-item::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.project-content {
+    padding: 0rem;
+    position: relative; 
+}
+
+
+
+
+
+
+
+/*** Projects Styling ***/
+
+#projects {
+    padding: 5rem 0 10rem 0;
+    background:linear-gradient(to bottom, #d8f3dc65,#ffffff);
+}
+
+
+
+
+
+  
+  .grid {
+    margin-left: 2rem;
+    display: grid;
+    width: 90rem;
+    grid-gap: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+  }
+  @media (max-width: 60em) {
+    .grid {
+      grid-gap: 3rem;
+    }
+  }
+  .grid__item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__img {
+    display: block;
+    width: 100%;
+    max-height: 35rem;
+    object-fit:cover;
+  }
+  .card__content {
+    padding: 2rem 2rem;
+  }
+  .card__header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  .card__text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+  }
+  
+
+
+
+
+
+
+.subheading-container {
+    text-align: center;
+    clear: both;
+}
+
+
+.subheading {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #000;
+    margin-top: 20px;
+}
+
+/* .border-heading::after{
+    content: '';
+    border: 2px solid #06b531;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+ } */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 80px 0px 50px 0pxx;
+
+}
+
+.projects-container-row {
+    flex-basis: 100%;
+    /* Full width for the subheading and following project */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    padding: 50px 0px 30px 0pxx;
+
+}
+
+.project-heading {
+    font-size: 8rem;
+    text-align: center;
+    color: #000000;
+}
+
+
+.projects-container img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.projects-item {
+    /* display: flex;
+    
+    flex: 1 1 70px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem; */
+    flex: 1 1 calc(50% - 1rem);
+    /* Two items per row with some spacing */
+    margin: 0 1rem 3rem 0;
+    /* Adjust the margin as needed */
+
+
+}
+
+.projects-description {
+    margin: auto 3.5rem;
+    font-size: 2rem;
+}
+
+.projects-title {
+    font-size: 70em;
+    font-weight: 400;
+    color: white;
+}
+
+.projects-description p {
+    font-size: 1.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.btn-projects {
+    color: #05570a;
+    background: rgb(239, 244, 240);
+    border-radius: 50px;
+    padding: 15px 30px;
+    /* Adjust the padding to increase button size */
+    font-size: 1.8rem;
+}
+
+.btn-projects:hover {
+    background: rgb(171, 246, 175);
+}
+
+/*........................................project...................................................................*/
+
+#projects {
+    padding: 5rem 0 10rem 0;
+    background:linear-gradient(to bottom, #d8f3dc65,#ffffff);
+}
+
+
+
+
+
+  
+  .grid {
+    margin-left: 2rem;
+    display: grid;
+    width: 90rem;
+    grid-gap: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: start;
+  }
+  @media (max-width: 60em) {
+    .grid {
+      grid-gap: 3rem;
+    }
+  }
+  .grid__item {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .grid__item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__img {
+    display: block;
+    width: 100%;
+    max-height: 35rem;
+    object-fit:cover;
+  }
+  .card__content {
+    padding: 2rem 2rem;
+  }
+  .card__header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+  .card__text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 1rem;
+  }
+  
+
+
+
+
+
+
+.subheading-container {
+    text-align: center;
+    clear: both;
+}
+
+
+.subheading {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #000;
+    margin-top: 20px;
+}
+
+/* .border-heading::after{
+    content: '';
+    border: 2px solid #06b531;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+ } */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 80px 0px 50px 0pxx;
+
+}
+
+.projects-container-row {
+    flex-basis: 100%;
+    /* Full width for the subheading and following project */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    padding: 50px 0px 30px 0pxx;
+
+}
+
+.project-heading {
+    font-size: 8rem;
+    text-align: center;
+    color: #000000;
+}
+
+
+.projects-container img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.projects-item {
+    /* display: flex;
+    
+    flex: 1 1 70px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem; */
+    flex: 1 1 calc(50% - 1rem);
+    /* Two items per row with some spacing */
+    margin: 0 1rem 3rem 0;
+    /* Adjust the margin as needed */
+
+
+}
+
+.projects-description {
+    margin: auto 3.5rem;
+    font-size: 2rem;
+}
+
+.projects-title {
+    font-size: 70em;
+    font-weight: 400;
+    color: white;
+}
+
+.projects-description p {
+    font-size: 1.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.btn-projects {
+    color: #05570a;
+    background: rgb(239, 244, 240);
+    border-radius: 50px;
+    padding: 15px 30px;
+    /* Adjust the padding to increase button size */
+    font-size: 1.8rem;
+}
+
+.btn-projects:hover {
+    background: rgb(171, 246, 175);
+}
+
 /*........................................project...................................................................*/
 #urban {
     padding: 50px 0px;
@@ -648,6 +1120,7 @@ body {
     margin-bottom: 20px;
     font-size: 3.5%rems;
 }
+
 
 .green-image {
     display: flex;
@@ -704,46 +1177,26 @@ body {
 }
 
 .meal-image {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; /* Align images horizontally */
+    justify-content: space-evenly; /* Evenly space the images */
+    gap: 20px; /* Space between the images */
 }
 
 .meal-image img {
-    width: 500px;
-    height: 500px;
-    margin: 0 10px;
-    opacity: 0;
-    animation: slideIn 1s forwards;
+    width: 500px; /* Set width of the images */
+    height: 500px; /* Set height of the images */
+    margin: 0 10px; /* Add margin between images */
+    border-radius: 15px; /* Round the corners of the images */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for normal state */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-.meal-image img:nth-child(1) {
-    animation-delay: 0.2s;
-    /* Delay the animation of the first image */
+/* Hover effect */
+.meal-image img:hover {
+    transform: translateY(-10px); /* "Pop-up" effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
-
-.meal-image img:nth-child(2) {
-    animation-delay: 0.4s;
-    /* Delay the animation of the second image */
-}
-
-.meal-image img:nth-child(3) {
-    animation-delay: 0.6s;
-    /* Delay the animation of the third image */
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
 
 #rural {
     padding: 50px 0px;
@@ -851,62 +1304,42 @@ body {
 
 #vermi h2 {
     font-size: 4.2rem;
-    color:  #555; ;
+    color: #555;
 }
 
 .vermi-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: row; /* Align children (cards) horizontally */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between the cards */
 }
 
 .vermi-image {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(222, 250, 222);
-    padding: 2%;
-
-
+    display: flex; /* Change to flex for horizontal layout */
+    justify-content: center; /* Align items in the center */
+    gap: 20px; /* Space between the images */
 }
 
 .vermi-image img {
-    width: 500px;
-    height: 400px;
-    margin: 0 10px;
-    opacity: 0;
-    object-fit: cover;
-    animation: slideIn 1s forwards;
-}
-.vermi-image img:nth-child(1) {
-    animation-delay: 0.2s;
-    /* Delay the animation of the first image */
+    width: 400px; /* Set width of images (cards) */
+    height: 500px; /* Keep aspect ratio */
+    border-radius: 15px; /* Round the corners of the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow in normal state */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-.vermi-image img:nth-child(2) {
-    animation-delay: 0.4s;
-    /* Delay the animation of the second image */
+/* Hover effect */
+.vermi-image img:hover {
+    transform: translateY(-10px); /* "Pop-up" effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
-.vermi-image img:nth-child(3) {
-    animation-delay: 0.6s;
-    /* Delay the animation of the third image */
-}
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 #poultry {
     text-align: center;
-    background: linear-gradient(to bottom,#d8f3dc65, #ffffff);
+    background: linear-gradient(to bottom, #d8f3dc65, #ffffff);
 }
 
 #poultry h2 {
@@ -915,8 +1348,9 @@ body {
 }
 
 .poultry-image {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; /* Align images horizontally */
+    justify-content: space-evenly; /* Evenly space the images */
+    gap: 20px; /* Add space between the images */
 }
 
 .poultry-wrapper {
@@ -927,44 +1361,21 @@ body {
 }
 
 .poultry-image img {
-    width: 300px;
-    height: 370px; /* Ensure images maintain their aspect ratio */
-    /* max-height: 400px; Set a maximum height to prevent images from becoming too large */
-    object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire container */
-    margin: 0 10px;
-    opacity: 0;
-    animation: slideIn 1s forwards;
+    width: 350px; /* Set width of the images */
+    height: 470px; /* Set height of the images */
+    margin: 0 10px; /* Add margin between images */
+    border-radius: 15px; /* Round the corners of the images */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for normal state */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-
-
-
-.poultry-image img:nth-child(1) {
-    animation-delay: 0.2s;
-    /* Delay the animation of the first image */
+/* Hover effect */
+.poultry-image img:hover {
+    transform: translateY(-10px); /* "Pop-up" effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
-.poultry-image img:nth-child(2) {
-    animation-delay: 0.4s;
-    /* Delay the animation of the second image */
-}
-
-.poultry-image img:nth-child(3) {
-    animation-delay: 0.6s;
-    /* Delay the animation of the third image */
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 #covid {
     text-align: center;
@@ -982,8 +1393,9 @@ body {
 }
 
 .cov-image {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; /* Align images horizontally */
+    justify-content: space-evenly; /* Evenly space the images */
+    gap: 20px; /* Add space between the images */
 }
 
 .covid-wrapper {
@@ -1000,71 +1412,22 @@ body {
     box-sizing: border-box;
 }
 
-.cov-image img  {
-    
-        width: 300px;
-        height: 300px;
-        opacity: 0;
-        object-fit: cover;
-        animation: slideIn 1s forwards;
-    
+.cov-image img {
+    width: 350px; /* Set width of the images */
+    height: 400px; /* Set height of the images */
+    margin: 0 10px; /* Add margin between images */
+    border-radius: 15px; /* Round the corners of the images */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow for normal state */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
 
-
-
-.cov-image img:nth-child(1) {
-    animation-delay: 0.2s;
-    /* Delay the animation of the first image */
+/* Hover effect */
+.cov-image img:hover {
+    transform: translateY(-10px); /* "Pop-up" effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
-.cov-image img:nth-child(2) {
-    animation-delay: 0.4s;
-    /* Delay the animation of the second image */
-}
-
-.cov-image img:nth-child(3) {
-    animation-delay: 0.6s;
-    /* Delay the animation of the third image */
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media(max-width: 500px){
-    html{
-        font-size: 50%;
-        /* font-size: 8px; */
-    }
-   
-
-    .project-item{
-        height: auto;
-        width: 100%;
-    }
-
-    .project-item .project-img, .project-item .project-content{
-         float: none;
-         width: 100%;
-         text-align: center;
-    }
-
-    
-
-    .btn{
-        font-size: 1.6rem;
-    }
-
-  
-}
 
 @media(min-width: 501px) and (max-width:768px){
  html{
